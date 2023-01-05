@@ -1,5 +1,6 @@
 // Given an array of integers nums and an integer target,
 // return indices of the two numbers such that they add up to target.
+
 const numbers = [4, 6, 7, 8, 9, 10];
 const target = 17;
 

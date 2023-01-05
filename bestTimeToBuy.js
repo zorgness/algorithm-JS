@@ -17,6 +17,8 @@ function bestProfit(prices) {
 
 console.log(bestProfit(prices) === output);
 
+// Second way of calculating with reducer
+
 const prices2 = [7, 1, 5, 3, 6, 4];
 
 const output2 = 5;
