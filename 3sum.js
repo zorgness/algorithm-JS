@@ -1,3 +1,5 @@
+// Not implemented yet
+
 // Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 // such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
@@ -33,12 +35,15 @@ function threeSum(arr) {
     left = i + 1;
     right = arr.length - 1;
 
-    if (arr[i] + arr[left] + arr[right] === 0) {
-      triplets.push([arr[i], arr[left], arr[right]]);
+    while (left < right) {
+      if (arr[i] + arr[left] + arr[right] === 0) {
+        triplets.push([arr[i], arr[left], arr[right]]);
+      }
+      left++;
     }
   }
 
-  console.log(triplets);
+  return triplets;
 }
 
-threeSum(nums);
+console.log(threeSum(nums));
