@@ -26,6 +26,7 @@ function containerWithMaxWater(arr) {
     for (let j = i + 1; j < arr.length; j++) {
       // find the max area by comparing last area with the size of the base
       let base = Math.min(arr[j], arr[i]);
+      console.log(base);
       area = Math.max(area, base * (j - i));
     }
   }
